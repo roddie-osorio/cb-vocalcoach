@@ -83,7 +83,24 @@ main {
     font-size: 55px;
     font: bold;
     margin: 30px;
+    letter-spacing: 0.5px;
+    animation: abcd 10s infinite;
 }
+
+@keyframes abcd{
+    0%{margin-left:30px}
+    10%{margin-left:15px}
+    20%{margin-left:30px}
+    30%{margin-right:15px}
+    40%{margin-right:30px}
+    50%{margin-left:15px}
+    60%{margin-left:30px}
+    70%{margin-right:15px}
+    80%{margin-right:30px}
+    90%{margin-left:15px}
+    100{margin-left:30px}
+}
+
 
 .presentacion{
     color: #320146;
@@ -99,16 +116,19 @@ main {
 }
 
 main a{
-    font-size: 22px;
-    color: #d6047f;
+    font-size: 25px;
+    color: #d40a80;
     text-decoration: none;
     font: bold;
     margin: 30px;
 }
 
 main a:hover{
-    color: #320146;
+    color: #fc0b98;
     transition: 0.5s;
+    text-shadow: 0 0 7px #fc0b98,
+                0 0 30px #fc0b98,
+                0 0 80px #fc0b98;
 }
 
 /*DEFINO LA SECCION FOTO CRISTINA DEL INDEX Y PAGINA PRINCIPAL*/
@@ -140,6 +160,9 @@ section.acerca a{
 section.acerca a:hover{
     color: #d6047f;
     transition: 0.5s;
+    text-shadow: 0 0 3px #f78ac9,
+                0 0 15px #f78ac9,
+                0 0 45px #f78ac9;
 }
 
 /*DEFINO LA SECCION METODO DEL INDEX Y PAGINA PRINCIPAL*/
@@ -162,7 +185,11 @@ section.metodo a{
 section.metodo a:hover{
     color: #d6047f;
     transition: 0.5s;
+    text-shadow: 0 0 3px #f78ac9,
+                0 0 15px #f78ac9,
+                0 0 45px #f78ac9;
 }
+
 
 /*DEFINO EL FOOTER DE TODAS LAS PAGINAS*/
 
