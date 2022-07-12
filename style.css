@@ -1,0 +1,476 @@
+
+/*SETEO VALORES DEL BODY*/
+
+body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*DEFINO EL GRID CONTAINER DEL INDEX Y PAGINA PRINCIPAL*/
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1.5fr;
+    grid-template-rows: 1fr 6fr 3fr 4fr;
+    grid-template-areas: 
+    "header header header"
+    "main main cristina"
+    "acerca metodo cristina"
+    "footer footer cristina";
+    height: 100vh;
+    margin: 2em;
+}
+
+/*DEFINO EL HEADER DE TODAS LAS PAGINAS*/
+
+header {
+    grid-area: header;
+    background:#320146;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 20px;
+    height: 80px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 18px;
+}
+
+
+ul li a {
+    margin-left: 15px;
+    padding: 3rem;
+    justify-content: flex-end;
+    font: bold;
+}
+
+ul li a:hover {
+    color: #d6047f;
+    transition: 0.5s;
+}
+
+
+.logo{
+    margin-left: 15px;
+    color:#fff;
+    font-size: 21px;
+    font: bold;
+}
+
+/*DEFINO EL MAIN DEL INDEX Y PAGINA PRINCIPAL*/
+
+main {
+    grid-area: main;
+    background: #edddf3;
+    
+}
+
+.hola{
+    color: #d6047f;
+    font-size: 55px;
+    font: bold;
+    margin: 30px;
+}
+
+.presentacion{
+    color: #320146;
+    font-size: 35px;
+    margin: 30px;
+}
+
+.link-main{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+main a{
+    font-size: 22px;
+    color: #d6047f;
+    text-decoration: none;
+    font: bold;
+    margin: 30px;
+}
+
+main a:hover{
+    color: #320146;
+    transition: 0.5s;
+}
+
+/*DEFINO LA SECCION FOTO CRISTINA DEL INDEX Y PAGINA PRINCIPAL*/
+
+.cristina {
+    grid-area: cristina;
+    background: url(./fotos/foto-3.jfif);
+    background-size: cover;
+}
+
+
+/*DEFINO LA SECCION ACERCA DEL INDEX Y PAGINA PRINCIPAL*/
+
+section.acerca {
+    grid-area: acerca;
+    background:#782997;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:350px;
+}
+    
+section.acerca a{
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+section.acerca a:hover{
+    color: #d6047f;
+    transition: 0.5s;
+}
+
+/*DEFINO LA SECCION METODO DEL INDEX Y PAGINA PRINCIPAL*/
+
+section.metodo {
+    grid-area: metodo;
+    background:#690691;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:350px;
+}
+    
+section.metodo a{
+    font-size: 25px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+section.metodo a:hover{
+    color: #d6047f;
+    transition: 0.5s;
+}
+
+/*DEFINO EL FOOTER DE TODAS LAS PAGINAS*/
+
+footer {
+    grid-area: footer;
+    background: #320146;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacto{
+    font-size: 18px;
+    color: #d6047f;
+    margin-top: 18px;
+}
+
+.horario{
+    font-size: 15px;
+    color:#FFF;
+    
+}
+
+.copyright{
+    font-size: 12px;
+    color: #d6047f;
+    margin-bottom: 18px;
+}
+
+
+.iconos i{
+    color: #FFF;
+    font-size: 50px;
+    line-height: 65px;
+    padding: 1.5rem;
+}
+
+/*DEFINO EL GRID DE LA PAGINA ACERCA DE MI*/
+
+.grid-container-acerca{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 1.5fr 6fr 2fr;
+    grid-template-areas: 
+    "header header"
+    "cristina-acerca main-acerca"
+    "footer footer";
+    height: 100vh;
+    margin: 2em;
+}
+
+
+/*DEFINO LA FOTO CRISTINA DE LA PAGINA ACERCA DE MI*/
+
+.cristina-acerca {
+    grid-area: cristina-acerca;
+    background: url(./fotos/foto_9\ -\ copia.jfif);
+    background-size: cover;
+}
+
+/*DEFINO EL MAIN DE LA PAGINA ACERCA DE MI*/
+
+.main-acerca {
+    grid-area: main-acerca;
+    background:#690691;
+}
+
+.hola-acerca{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: #d6047f;
+    font-size: 25px;
+    font: bold;
+    margin: 15px;
+}
+
+.presentacion-acerca{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: #FFF;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.link-main-acerca{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+}
+
+.main-acerca a{
+    font-size: 20px;
+    color: #d6047f;
+    text-decoration: none;
+    font: bold;
+}
+
+.main-acerca a:hover{
+    color: #320146;
+    transition: 1s;
+}
+
+
+/*DEFINO EL GRID CONTAINER DE LA PAGINA METODO*/
+
+.grid-container-metodo{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.8fr 5fr 2fr;
+    grid-template-areas: 
+    "header header"
+    "main-metodo cristina-metodo"
+    "footer footer";
+    height: 100vh;
+    margin: 2em;
+}
+
+/*DEFINO EL MAIN DE LA PAGINA METODO*/
+
+.main-metodo {
+    grid-area: main-metodo;
+    background:#690691;
+}
+
+.presentacion-metodo{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    color: #FFF;
+    font-size: 20px;
+    margin: 15px;
+}
+
+.head-metodo{
+    margin-left: 10rem;
+    color: #d6047f;
+    font-size:25px;
+}
+
+/*DEFINO LA FOTO CRISTINA DE LA PAGINA METODO*/
+
+.cristina-metodo {
+    grid-area: cristina-metodo;
+    background: url(./fotos/foto.jfif);
+    background-size: cover;
+}
+
+
+/*DEFINO EL GRID CONTAINER DE LA PAGINA MEDIA*/
+
+.grid-container-media{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.8fr 9fr 3fr;
+    grid-template-areas: 
+    "header header"
+    "main-media main-media"
+    "footer footer";
+    height: 100vh;
+    margin: 2em;
+    
+
+}
+
+/*DEFINO EL MAIN DE LA PAGINA MEDIA*/
+
+.main-media {
+    grid-area: main-media;
+    background:#690691;
+}
+
+.contenido-imagenes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6rem;
+    margin-bottom: 4rem;
+}
+
+.head-imagenes{
+    display:grid;
+    flex-direction: column;
+    justify-content: center;
+    color: #d6047f;
+    font-size:30px;
+}
+
+.galeria-imagenes{
+    margin-left: 12rem;
+}
+
+
+/*DEFINO EL GRID CONTAINER DE LA PAGINA CONTACTO*/
+
+.grid-container-contacto{
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 0.8fr 9fr 6fr;
+    grid-template-areas: 
+    "header header"
+    "main-contacto main-contacto"
+    "footer footer";
+    margin: 2em;
+    
+
+}
+
+/*DEFINO EL MAIN DE LA PAGINA CONTACTO*/
+
+.main-contacto {
+    grid-area: main-contacto;
+    background:#690691;
+}
+
+.contenido-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6rem;
+    margin-bottom: 5rem;
+   
+}
+
+
+.head-contacto{
+    display:grid;
+    flex-direction: column;
+    justify-content: center;
+    color: #d6047f;
+    font-size:30px;
+}
+
+.formulario-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    font-size: 15px;
+}
+
+.text-box{
+    background: #320146;
+    color: #d6047f;
+    border: none;
+    height: 50px;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.text-message{
+    background: #320146;
+    color: #d6047f;
+    border: none;
+    width: 100%;
+    padding: 12px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    opacity: 0.9;
+    max-height:400px;
+
+}
+
+.send-btn {
+    float: right;
+    background: #320146;
+    color:#d6047f;
+    border: none;
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    transition: 0.5s;
+    transition-property: background;
+    cursor: pointer;
+}
+
+.send-btn:hover {
+    background:#dc89f5;
+}
+
+
+@media screen and (max-width: 360px){
+    .grid-container{
+        grid-template-columns: 3fr;
+        grid-auto-rows: 1fr 5fr 5fr 3fr 3fr 3fr;
+        grid-template-areas: 
+        "header"
+        "main"
+        "cristina"
+        "acerca"
+        "metodo"
+        "footer";
+        }
+}
+
+
+
