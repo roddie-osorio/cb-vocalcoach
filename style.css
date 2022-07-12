@@ -292,10 +292,12 @@ footer {
 }
 
 .main-acerca a:hover{
-    color: #320146;
+    color: #d6047f; 
     transition: 1s;
+    text-shadow: 0 0 3px #f880c6,
+                0 0 15px #f880c6,
+                0 0 45px #f880c6;
 }
-
 
 /*DEFINO EL GRID CONTAINER DE LA PAGINA METODO*/
 
@@ -482,22 +484,11 @@ footer {
 
 .send-btn:hover {
     background:#dc89f5;
+    box-shadow: 0 0 5px #dc89f5,
+                0 0 20px #dc89f5,
+                0 0 60px #dc89f5;
 }
 
-
-@media screen and (max-width: 360px){
-    .grid-container{
-        grid-template-columns: 3fr;
-        grid-auto-rows: 1fr 5fr 5fr 3fr 3fr 3fr;
-        grid-template-areas: 
-        "header"
-        "main"
-        "cristina"
-        "acerca"
-        "metodo"
-        "footer";
-        }
-}
 
 
 
