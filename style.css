@@ -4,77 +4,38 @@
 body{
     padding: 0;
     margin: 0;
-    height: 100vh;
     font-family: 'Lato', sans-serif;
     font-family: 'Montserrat', sans-serif;
 }
 
-/*DEFINO EL GRID CONTAINER DEL INDEX Y PAGINA PRINCIPAL*/
+/*INICIO DEL HEADER DE TODAS LAS PAGINAS*/
 
-.grid-container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1.5fr;
-    grid-template-rows: 1fr 6fr 3fr 4fr;
-    grid-template-areas: 
-    "header header header"
-    "main main cristina"
-    "acerca metodo cristina"
-    "footer footer cristina";
-    height: 100vh;
-    margin: 2em;
+.barra-navegacion{
+    background-color: #6610f2;
 }
 
-/*DEFINO EL HEADER DE TODAS LAS PAGINAS*/
-
-header {
-    grid-area: header;
-    background:#320146;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-    font-size: 20px;
-    height: 80px;
+.navbar-brand {
+    color: #FFF;
 }
 
-ul {
-    list-style: none;
-    display: flex;
-}
-
-a {
-    text-decoration: none;
+.navbar-nav a{
     color: #FFF;
     font-size: 18px;
+    margin-left: 3rem;
 }
 
-
-ul li a {
-    margin-left: 15px;
-    padding: 3rem;
-    justify-content: flex-end;
-    font: bold;
+.navbar-nav a:hover{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: rgb(250, 8, 177);
 }
 
-ul li a:hover {
-    color: #d6047f;
-    transition: 0.5s;
-}
+/*FIN DEL HEADER*/
 
-
-.logo{
-    margin-left: 15px;
-    color:#fff;
-    font-size: 21px;
-    font: bold;
-}
-
-/*DEFINO EL MAIN DEL INDEX Y PAGINA PRINCIPAL*/
-
-main {
-    grid-area: main;
-    background: #edddf3;
+/*INCIO SECCION HOLA INDEX*/
+.col-md-8{
+    background-color: #edddf3;
     
 }
 
@@ -101,21 +62,19 @@ main {
     100{margin-left:30px}
 }
 
-
-.presentacion{
+.nombre{
     color: #320146;
     font-size: 35px;
     margin: 30px;
 }
 
-.link-main{
+.conoce-mas{
     display: flex;
     align-items: center;
     justify-content: right;
-
 }
 
-main a{
+.conoce-mas a{
     font-size: 25px;
     color: #d40a80;
     text-decoration: none;
@@ -123,7 +82,7 @@ main a{
     margin: 30px;
 }
 
-main a:hover{
+.conoce-mas a:hover{
     color: #fc0b98;
     transition: 0.5s;
     text-shadow: 0 0 7px #fc0b98,
@@ -131,71 +90,76 @@ main a:hover{
                 0 0 80px #fc0b98;
 }
 
-/*DEFINO LA SECCION FOTO CRISTINA DEL INDEX Y PAGINA PRINCIPAL*/
+/*FIN DE LA SECCION HOLA DEL INDEX*/
 
-.cristina {
-    grid-area: cristina;
-    background: url(./fotos/foto-3.jfif);
+/*INCIO DE LAS SECCIONES ACERCA Y METODO DEL INDEX*/
+
+.col-md-6{
+    background-color: #7c34f0;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.col-md-6 a{
+    color: #fff;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.col-md-6 a:hover{
+    color: #d6047f;
+    transition: 0.5s;
+    text-shadow: 0 0 3px #f78ac9,
+                0 0 15px #f78ac9,
+                0 0 45px #f78ac9;
+}
+
+
+/*FIN DE LAS SECCIONES ACERCA Y METODO DEL INDEX*/
+
+/*INICIO FOOTER DEL INDEX*/
+
+.col-md-12{
+    background-color:#6204f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    font-size: 18px;
+    color: #b8066e;
+    margin-bottom: 18px;
+}
+
+.iconos i{
+    color: #FFF;
+    font-size: 50px;
+    line-height: 65px;
+    padding: 1.5rem;
+}
+
+/*FIN FOOTER DEL INDEX*/
+
+/*INICIO FOTO CRISTINA DEL INDEX*/
+
+.col-md-4{
+    background-image: url(./fotos/foto-3u.jfif);
     background-size: cover;
 }
 
-
-/*DEFINO LA SECCION ACERCA DEL INDEX Y PAGINA PRINCIPAL*/
-
-section.acerca {
-    grid-area: acerca;
-    background:#782997;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:350px;
-}
-    
-section.acerca a{
-    font-size: 25px;
-    color: #FFF;
-    text-decoration: none;
-}
-
-section.acerca a:hover{
-    color: #d6047f;
-    transition: 0.5s;
-    text-shadow: 0 0 3px #f78ac9,
-                0 0 15px #f78ac9,
-                0 0 45px #f78ac9;
-}
-
-/*DEFINO LA SECCION METODO DEL INDEX Y PAGINA PRINCIPAL*/
-
-section.metodo {
-    grid-area: metodo;
-    background:#690691;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:350px;
-}
-    
-section.metodo a{
-    font-size: 25px;
-    color: #FFF;
-    text-decoration: none;
-}
-
-section.metodo a:hover{
-    color: #d6047f;
-    transition: 0.5s;
-    text-shadow: 0 0 3px #f78ac9,
-                0 0 15px #f78ac9,
-                0 0 45px #f78ac9;
-}
+/*FIN FOTO CRISTINA DEL INDEX*/
 
 
-/*DEFINO EL FOOTER DE TODAS LAS PAGINAS*/
+/*DEFINO EL FOOTER DE LAS PAGINAS ACERCA, METODO, MEDIA Y CONTACTO*/
 
 footer {
     grid-area: footer;
-    background: #320146;
+    background: #6610f2;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -220,7 +184,6 @@ footer {
     margin-bottom: 18px;
 }
 
-
 .iconos i{
     color: #FFF;
     font-size: 50px;
@@ -233,15 +196,12 @@ footer {
 .grid-container-acerca{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1.5fr 6fr 2fr;
+    grid-template-rows: 6fr 2fr;
     grid-template-areas: 
-    "header header"
     "cristina-acerca main-acerca"
     "footer footer";
-    height: 100vh;
-    margin: 2em;
+    
 }
-
 
 /*DEFINO LA FOTO CRISTINA DE LA PAGINA ACERCA DE MI*/
 
@@ -286,7 +246,7 @@ footer {
 
 .main-acerca a{
     font-size: 20px;
-    color: #d6047f;
+    color: #fc0595;
     text-decoration: none;
     font: bold;
 }
@@ -304,13 +264,11 @@ footer {
 .grid-container-metodo{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 0.8fr 5fr 2fr;
+    grid-template-rows: 5fr 2fr;
     grid-template-areas: 
-    "header header"
     "main-metodo cristina-metodo"
     "footer footer";
-    height: 100vh;
-    margin: 2em;
+    
 }
 
 /*DEFINO EL MAIN DE LA PAGINA METODO*/
@@ -343,21 +301,16 @@ footer {
     background-size: cover;
 }
 
-
 /*DEFINO EL GRID CONTAINER DE LA PAGINA MEDIA*/
 
 .grid-container-media{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 0.8fr 9fr 3fr;
+    grid-template-rows: 5fr 2fr;
     grid-template-areas: 
-    "header header"
     "main-media main-media"
     "footer footer";
-    height: 100vh;
-    margin: 2em;
     
-
 }
 
 /*DEFINO EL MAIN DE LA PAGINA MEDIA*/
@@ -387,18 +340,16 @@ footer {
     margin-left: 12rem;
 }
 
-
 /*DEFINO EL GRID CONTAINER DE LA PAGINA CONTACTO*/
 
 .grid-container-contacto{
     display: grid;
     grid-template-columns: 1.5fr 1fr;
-    grid-template-rows: 0.8fr 9fr 6fr;
+    grid-template-rows: 9fr 6fr;
     grid-template-areas: 
-    "header header"
     "main-contacto main-contacto"
     "footer footer";
-    margin: 2em;
+    
     
 
 }
@@ -418,7 +369,6 @@ footer {
     margin-bottom: 5rem;
    
 }
-
 
 .head-contacto{
     display:grid;
@@ -488,7 +438,3 @@ footer {
                 0 0 20px #dc89f5,
                 0 0 60px #dc89f5;
 }
-
-
-
-
